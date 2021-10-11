@@ -4,6 +4,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+
+// 有个东西是一个接口的使用和一个路由的使用这样的操作是不一样的
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 

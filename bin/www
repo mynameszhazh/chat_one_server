@@ -3,8 +3,10 @@
 /**
  * Module dependencies.
  */
-const getSocket = require('../socket.io.js')
 const app = require('../app');
+// 测试使用socket
+// const getSocket = require('../socket/socket.io.js')
+const socketUserChat = require('../socket/chat_user.js')
 const debug = require('debug')('chat-server:server');
 const http = require('http');
 // const path = require('path')
@@ -21,7 +23,7 @@ app.set('port', port);
  */
 
 const server = http.createServer(app);
-getSocket(server, {cors: true})
+socketUserChat(server)
 
 
 /**

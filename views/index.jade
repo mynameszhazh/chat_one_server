@@ -1,5 +1,6 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1(class='title')= title
+  p(class='content') Welcome to #{title}
+  span= title

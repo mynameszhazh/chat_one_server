@@ -1,5 +1,6 @@
+
 const io = require('socket.io')
-function getSocket(server, options) {
+function getSocket(server,options = {cors: true}) {
   let ios = io(server, options)
   ios.on('connection', client => {
     // console.log(client.id)
