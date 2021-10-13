@@ -1,4 +1,4 @@
-
+// 测试使用
 const io = require('socket.io')
 function getSocket(server,options = {cors: true}) {
   let ios = io(server, options)

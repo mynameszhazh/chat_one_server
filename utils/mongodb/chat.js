@@ -6,7 +6,8 @@ mongoose.connect('mongodb://localhost:27017/chat')
 const chatUserList = new mongoose.Schema({
   userName: { type: String, required: true },
   age: { type: Number, required: true },
-  headImg: { type: String, required: true }
+  headImg: { type: String, required: true },
+  isOnline: {type: Boolean, default: false}
 });
 
 // 3. 将文档发布为模型

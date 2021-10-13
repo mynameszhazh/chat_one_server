@@ -13,8 +13,6 @@ function socketUserChat(server, options = { cors: true}) {
   WX.on('connection', client => {
     console.log('addd')
   })
-  // ios.on('connection', client => {
-  // })
 }
 
 
