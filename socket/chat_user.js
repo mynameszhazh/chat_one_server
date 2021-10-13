@@ -11,7 +11,7 @@ function socketUserChat(server, options = { cors: true}) {
   let ios = io(server, options)
   let WX = ios.of('/wx')
   WX.on('connection', client => {
-
+    console.log('addd')
   })
   // ios.on('connection', client => {
   // })
