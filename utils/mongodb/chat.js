@@ -3,11 +3,13 @@ const mongoose = require('mongoose')
 //  连接数据库
 mongoose.connect('mongodb://localhost:27017/chat')
 
+// 这里需要规则
 const chatUserList = new mongoose.Schema({
   userName: { type: String, required: true },
   age: { type: Number, required: true },
   headImg: { type: String, required: true },
-  isOnline: {type: Boolean, default: false}
+  isOnline: {type: Boolean, default: false},
+  socketId: {type: String, default: ''}
 });
 
 // 3. 将文档发布为模型
